@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --title-color: #0A3853;
+    --text-color: #FFFFFF;
+    --link-color: #26C6EA;
+    --button-color: #26C7EA;
+    --button-text-color: #0B0E66;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.body-container {
+    width: 1440px;
+
+    background-color: #fff;
+
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* ==================== Header====================== */
+
+.container {
+    width: 1440px;
+
+    padding: 27px 50px;
+
+    justify-content: space-between;
+
+    justify-items: center;
+
+    margin: 0 auto;
+}
+
+.div-bcg-color {
+    background-color: #2B4A61DE;
+
+    opacity: 87%;
+}
+
+.logo {
+    width: 236px;
+    height: 96px;
+
+    margin-left: 50px;
+}
+
+.menu {
+    gap: 40px;
+
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+.menu a {
+    font-family: "Inter", serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--link-color);
+}
+
+.button {
+    width: 141px;
+    height: 42px;
+
+    background-color: var(--button-color);
+
+    cursor: pointer;
+
+    padding: 0 40px;
+    margin-top: 20px;
+}
+
+.button-text {
+    font-family: 'Inter', serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 5px;
+
+    color: var(--button-text-color);
+}
+
+.div-text {
+    font-family: 'Hammersmith One', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+
+    color: var(--text-color);
+
+    margin-top: 30px;
+}
+
+.div-leng {
+    width: 36px;
+    height: 20px;
+
+    border: 1px solid var(--text-color);
+    border-radius: 40%;
+
+    cursor: pointer;
+
+    padding-left: 20px;
+    margin: 30px 10px;
+}
+
+
+/* =============== Бургер кномка====================== */
+
+.burger{
+    display: none;
+
+    flex-direction: column;
+    cursor: pointer;
+    gap: 3px;
+
+    margin-top: 20px;
+}
+
+.burger span {
+    display: block;
+
+    width: 25px;
+    height: 3px;
+
+    background-color: var(--text-color);
+}
+
+/* ============== Адаптив на планшет ================= */
+
+@media (max-width:768px) {
+    .container {
+        width: 100%;
+    }
+
+    .divCont {
+        flex-direction: column;
+    }
+
+    .menu {
+        display: none;
+
+        gap: 10px;
+
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .div-leng-content {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .hidden {
+        display: flex;
+    }
+}
+
+
+/* ============= Адаптив на телефон ================== */
+
+@media (max-width:420px) {
+    .container {
+        width: 100%;
+    }
+
+    .divCont {
+        flex-direction: column;
+    }
+
+    .menu {
+        display: none;
+
+        gap: 10px;
+
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .div-leng-content {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .hidden {
+        display: flex;
+    }
+}
